@@ -4,7 +4,7 @@
   "description": "Agent-friendly HarmonyOS and OpenHarmony UI automation CLI",
   "type": "module",
   "bin": {
-    "hon": "./bin/hon.mjs"
+    "hon": "bin/hon.mjs"
   },
   "files": [
     "bin",
