@@ -1,0 +1,10 @@
+# hon run examples/login.hon --serial <device-id>
+set timeout=15s
+
+app start com.example.demo EntryAbility
+wait "登录"
+fill "TextInput[hint~=邮箱]" "user@example.com"
+fill "TextInput[hint~=密码]" "secret"
+tap "登录"
+wait "首页"
+screenshot login-success.png

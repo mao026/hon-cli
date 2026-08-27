@@ -1,0 +1,47 @@
+{
+  "attributes": {
+    "bundleName": "com.example.demo",
+    "componentType": "Column",
+    "accessibilityId": "root",
+    "bounds": "[0,0][1080,2400]",
+    "visible": "true",
+    "enabled": "true"
+  },
+  "children": [
+    {
+      "attributes": {
+        "componentType": "TextInput",
+        "accessibilityId": "email",
+        "hint": "邮箱地址",
+        "bounds": "[100,300][980,420]",
+        "visible": "true",
+        "enabled": "true",
+        "clickable": "true",
+        "focused": "false"
+      },
+      "children": []
+    },
+    {
+      "attributes": {
+        "componentType": "Button",
+        "id": "login_button",
+        "text": "登录",
+        "bounds": "[100,500][980,620]",
+        "visible": "true",
+        "enabled": "true",
+        "clickable": "true"
+      },
+      "children": []
+    },
+    {
+      "attributes": {
+        "componentType": "Text",
+        "text": "登录帮助",
+        "bounds": "[100,700][400,760]",
+        "visible": "true",
+        "enabled": "true"
+      },
+      "children": []
+    }
+  ]
+}

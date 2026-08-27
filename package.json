@@ -1,0 +1,32 @@
+{
+  "name": "hon-cli",
+  "version": "0.1.0",
+  "description": "Agent-friendly HarmonyOS and OpenHarmony UI automation CLI",
+  "type": "module",
+  "bin": {
+    "hon": "./bin/hon.mjs"
+  },
+  "files": [
+    "bin",
+    "src",
+    "examples",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "node --check bin/hon.mjs && node --check src/cli.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mao026/hon-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mao026/hon-cli/issues"
+  },
+  "homepage": "https://github.com/mao026/hon-cli#readme",
+  "license": "MIT"
+}
