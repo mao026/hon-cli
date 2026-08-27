@@ -36,14 +36,14 @@ hdc list targets
 node --version
 ```
 
-在本仓库中注册全局命令：
+从 npm 全局安装：
 
 ```bash
-npm link
+npm install -g @mao026/hon-cli
 hon doctor
 ```
 
-也可以不注册，直接运行：
+在本仓库中开发时也可以使用 `npm link`，或直接运行：
 
 ```bash
 node bin/hon.mjs doctor
