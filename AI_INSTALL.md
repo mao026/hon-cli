@@ -21,10 +21,18 @@ npm install -g @mao026/hon-cli
 hon --version
 ```
 
-3. 从 GitHub 仓库安装 skill：
+3. 从已安装的 npm 包安装 skill，不要再次从 GitHub 下载。macOS / Linux：
 
 ```bash
-npx --yes skills add mao026/hon-cli --global --skill hon-cli --yes
+SKILL_SOURCE="$(npm root -g)/@mao026/hon-cli"
+npx --yes skills add "$SKILL_SOURCE" --global --skill hon-cli --yes
+```
+
+Windows PowerShell：
+
+```powershell
+$SkillSource = Join-Path (npm root -g) '@mao026/hon-cli'
+npx --yes skills add $SkillSource --global --skill hon-cli --yes
 ```
 
 4. 验证 skill 和设备环境：
@@ -47,7 +55,8 @@ hon ui --json
 
 ```bash
 npm update -g @mao026/hon-cli
-npx --yes skills update hon-cli --global --yes
+SKILL_SOURCE="$(npm root -g)/@mao026/hon-cli"
+npx --yes skills add "$SKILL_SOURCE" --global --skill hon-cli --yes
 ```
 
 完整使用方法见安装后的 `hon-cli` skill，源码位于：
