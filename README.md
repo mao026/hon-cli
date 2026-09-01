@@ -16,6 +16,16 @@ $ hon wait "首页" --timeout 15s
 found 首页 (508ms)
 ```
 
+## AI 一句话安装
+
+把下面这句话发给能够执行终端命令的 AI Agent：
+
+```text
+请阅读 https://github.com/mao026/hon-cli/blob/main/AI_INSTALL.md，按说明安装 hon CLI、添加 hon-cli skill，并验证安装结果。
+```
+
+Agent 会从 npm 安装 CLI，并通过 Agent Skills 协议安装 [`skills/hon-cli/SKILL.md`](skills/hon-cli/SKILL.md)。
+
 ## 当前能力
 
 - 通过 `hdc` 自动发现或指定 HarmonyOS / OpenHarmony 设备

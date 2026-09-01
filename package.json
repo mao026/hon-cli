@@ -1,6 +1,6 @@
 {
   "name": "@mao026/hon-cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Agent-friendly HarmonyOS and OpenHarmony UI automation CLI",
   "type": "module",
   "bin": {
@@ -10,6 +10,8 @@
     "bin",
     "src",
     "examples",
+    "skills",
+    "AI_INSTALL.md",
     "README.md",
     "LICENSE"
   ],

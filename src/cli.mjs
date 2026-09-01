@@ -140,7 +140,7 @@ async function doctor(hdc) {
 
 async function execute(rawArgv, context = {}) {
   const { flags, positional } = parseArguments(rawArgv);
-  if (flags.version) return success('version', { version: '0.1.0' }, 'hon 0.1.0');
+  if (flags.version) return success('version', { version: '0.1.1' }, 'hon 0.1.1');
   if (flags.help || positional.length === 0 || positional[0] === 'help') return success('help', {}, HELP);
 
   const command = COMMAND_ALIASES[positional[0]] ?? positional[0];
